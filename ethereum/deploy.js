@@ -3,7 +3,7 @@ const Web3 = require('web3');
 const compiledFactory = require('./build/CampaignFactory.json');
 
 const provider = new HDWalletProvider(
-  'Your 12 word mneumonic',
+  '',
   'https://rinkeby.infura.io/orDImgKRzwNrVCDrAk5Q'
 );
 const web3 = new Web3(provider);
