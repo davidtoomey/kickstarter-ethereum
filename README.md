@@ -1,20 +1,30 @@
-To run this code, 
+This project relies on MetaMask as the layer between the user and the Ethereum blockchain. 
 
-npm install
+https://metamask.io/
 
-This project uses the Infura API to deploy contracts to the Rinkeby test network. In order to deploy a contract, you must unlock your account. Add your 12 word mneumonic phrase from metamask to the deploy.js file to unlock your account and interact with Infura.
+Install Dependencies: 
 
-In the ethereum folder, run 
+  npm install
 
-node compile.js
+This project uses the Infura API to deploy contracts to the Rinkeby test network. In order to deploy a contract, you must unlock your account. Add your 12 word mneumonic phrase from metamask to the ethereum/deploy.js file to unlock your account and interact with Infura.
 
-node deploy.js
+Compile and Deploy Contracts:
 
-After running node deploy.js, copy the address of the deployed contract and paste it into the factory.js file. 
+Inside the ethereum directory, run 
 
-to start the server run 
+  node compile.js
 
-npm run dev
+  node deploy.js
+
+After running node deploy.js, the address of the newly deployed contract will return in the console. To get an instance of the contract inside the project, copy the address of the newly deployed contract and paste it into the factory.js file. 
+
+Start the Server: 
+
+ npm run dev
+
+server will run on localhost:3000
+
+
 
 
 
